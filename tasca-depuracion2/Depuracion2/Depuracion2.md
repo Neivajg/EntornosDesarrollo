@@ -35,16 +35,16 @@ El método `main` es el punto de entrada del programa. Su función es crear vari
 
 ## 2. *Pon un punto de ruptura (*breakpoint) en la línea 27 del método *main de la clase Principal y averiguáis los valores de las variables velocidad_*nueva1, velocidad_*nueva2 y velocidad_*nueva3. Averiguáis también qué datos tienen en sus  parámetros los coches con variables c,*c2 y *c3.
 
-![alt text](../../../../image-2.png)
+![Breakpoint línea 27](imagenes/image-2.png)
 
 ## 3.*Pon un punto de ruptura (*breakpoint) en la línea 46 del método *main de la clase Principal y averiguáis los valores de las variables velocidad_*nueva1, velocidad_*nueva2 y velocidad_*nueva3. Averiguáis también qué datos tienen en sus  parámetros los coches con variables c,*c2 y *c3.
 
-![alt text](../../../../image-3.png)
+![Breakpoint línea 46](imagenes/image-3.png)
 
 
 ## 4. Imagen depuración adiccional : Pinta los coches el programa antes de frenar y después de frenar 
 
-![alt text](../../../../image-7.png)
+![Pinta coches antes y después](imagenes/image-7.png)
 
 ## 5. URL REPOSITORIO
 
