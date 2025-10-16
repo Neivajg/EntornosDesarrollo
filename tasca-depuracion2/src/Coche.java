@@ -7,7 +7,8 @@ public class Coche {
 	String color;
 	int velocidad;    // En km/hora
 	
-	
+
+
 	public Coche(String marca, String modelo, String color) {
 		
 		this.marca = marca;
