@@ -46,11 +46,8 @@ public class Main {
                         break;
 
                     case 2:
-                        System.out.print("Nuevo color para pintar tu coche: ");
-                        String nuevoColor = sc.nextLine();
-                        coche1.setColor(nuevoColor);
-                        System.out.println("Coche pintado de " + nuevoColor);
-                        coche1.imprime(); // IMPRIMIR EL COCHE PARA VISUALIZAR LOS CAMBIOS INSERTADOS
+                        System.out.println("Pintar coche ");
+                        coche1.pinta(); // IMPRIMIR EL COCHE PARA VISUALIZAR LOS CAMBIOS INSERTADOS
                         System.out.println("---------------------------------");
                         break;
 
