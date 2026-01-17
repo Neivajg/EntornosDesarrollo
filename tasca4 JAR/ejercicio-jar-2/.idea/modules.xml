@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../Practica cajero automatico/Practica cajero automatico.iml" filepath="$PROJECT_DIR$/../../../../Practica cajero automatico/Practica cajero automatico.iml" />
       <module fileurl="file://$PROJECT_DIR$/ejercicio-jar-2.iml" filepath="$PROJECT_DIR$/ejercicio-jar-2.iml" />
     </modules>
   </component>
