@@ -20,4 +20,8 @@ class Divisible3Test {
     void n1() {
         assertEquals("NO", Divisible3.esDivisible(1));
     }
+    @Test
+    void n3() {
+        assertEquals("SI", Divisible3.esDivisible(3));
+    }
 }
