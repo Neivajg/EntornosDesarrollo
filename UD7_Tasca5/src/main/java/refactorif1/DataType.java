@@ -1,5 +1,4 @@
 package main.java.refactorif1;
-
 import java.util.Set;
 
 public class DataType {
@@ -20,16 +19,16 @@ public class DataType {
         System.out.println(DataType.gd(0));
     }
 
-    public static String gd(int code){
+    public static String gd(int code) {
 
-            if (DATE_CODES.contains(code)) {
-                return "DATE";
-            }
-
-            if (NUMERIC_CODES.contains(code)) {
-                return "NUMERIC";
-            }
-
-            return "STRING";
+        if (DATE_CODES.contains(code)) {
+            return "DATE";
         }
+
+        if (NUMERIC_CODES.contains(code)) {
+            return "NUMERIC";
+        }
+
+        return "STRING";
+    }
 }
