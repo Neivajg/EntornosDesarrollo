@@ -92,4 +92,15 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void hola12Especial() {
+        PasswordResult r = PasswordVerify.validate("hola12!");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de tenir almenys 8 caràcters\n" +
+                        "La contrasenya ha de contenir almenys una lletra majúscula",
+                r.getMessage()
+        );
+    }
 }
