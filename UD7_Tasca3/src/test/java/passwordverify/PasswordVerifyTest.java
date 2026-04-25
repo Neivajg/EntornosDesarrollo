@@ -114,4 +114,15 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void holacaracola12() {
+        PasswordResult r = PasswordVerify.validate("holacaracola12");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de contenir almenys una lletra majúscula\n" +
+                        "La contrasenya ha de contenir almenys un caràcter especial",
+                r.getMessage()
+        );
+    }
 }
