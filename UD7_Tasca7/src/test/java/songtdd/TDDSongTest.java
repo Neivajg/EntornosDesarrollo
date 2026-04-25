@@ -19,4 +19,13 @@ public class TDDSongTest {
                 TDDSong.song(new String[]{"fly"})
         );
     }
+
+    @Test
+    public void spider() {
+        assertEquals(
+                "There was an old lady who swallowed a spider.\n" +
+                        "I don't know why she swallowed a spider - perhaps she'll die!\n",
+                TDDSong.song(new String[]{"spider"})
+        );
+    }
 }
