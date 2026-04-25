@@ -147,4 +147,14 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void cortoPeroValidoFormato() {
+        PasswordResult r = PasswordVerify.validate("ho12A!");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de tenir almenys 8 caràcters",
+                r.getMessage()
+        );
+    }
 }
