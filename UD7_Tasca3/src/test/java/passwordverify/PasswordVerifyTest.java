@@ -157,4 +157,14 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void faltaNumeros() {
+        PasswordResult r = PasswordVerify.validate("holacaracolaA!");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de contenir almenys 2 números",
+                r.getMessage()
+        );
+    }
 }
