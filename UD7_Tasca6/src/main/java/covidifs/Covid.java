@@ -16,6 +16,16 @@ public class Covid {
 
         boolean tieneFiebre = bodyTemperature >= 38;
 
+        boolean tieneRiesgo =
+                difficultyBreathing ||
+                        diabetes ||
+                        cancer ||
+                        isPregnant ||
+                        isOver60yearsold ||
+                        hepatic ||
+                        kidnevDisease ||
+                        respiratoryDisease;
+
         if (
                 (tieneFiebre && difficultyBreathing) ||
                         (tieneFiebre && difficultyBreathing && diabetes) ||
