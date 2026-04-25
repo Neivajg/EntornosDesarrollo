@@ -78,4 +78,25 @@ public class TDDSongTest {
         );
     }
 
+    @Test
+    public void birdFlySpider() {
+        assertEquals(
+                "There was an old lady who swallowed a bird.\n" +
+                        "I don't know why she swallowed a bird - perhaps she'll die!\n" +
+                        "\n" +
+                        "There was an old lady who swallowed a fly;\n" +
+                        "That wriggled and wiggled and tickled inside her.\n" +
+                        "She swallowed the fly to catch the bird;\n" +
+                        "I don't know why she swallowed a bird - perhaps she'll die!\n" +
+                        "\n" +
+                        "There was an old lady who swallowed a spider;\n" +
+                        "How absurd to swallow a spider.\n" +
+                        "She swallowed the spider to catch the fly,\n" +
+                        "She swallowed the fly to catch the bird;\n" +
+                        "I don't know why she swallowed a bird - perhaps she'll die!\n" +
+                        "\n",
+                TDDSong.song(new String[]{"bird", "fly", "spider"})
+        );
+    }
+
 }
