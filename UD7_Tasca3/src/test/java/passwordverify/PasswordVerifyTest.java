@@ -103,4 +103,15 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void hola12A() {
+        PasswordResult r = PasswordVerify.validate("hola12A");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de tenir almenys 8 caràcters\n" +
+                        "La contrasenya ha de contenir almenys un caràcter especial",
+                r.getMessage()
+        );
+    }
 }
