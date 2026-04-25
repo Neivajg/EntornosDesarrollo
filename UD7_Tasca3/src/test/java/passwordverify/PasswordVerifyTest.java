@@ -167,4 +167,14 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void faltaMayuscula() {
+        PasswordResult r = PasswordVerify.validate("holacaracola12!");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de contenir almenys una lletra majúscula",
+                r.getMessage()
+        );
+    }
 }
