@@ -177,4 +177,14 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void faltaEspecial() {
+        PasswordResult r = PasswordVerify.validate("holacaracola12A");
+        assertFalse(r.isValid());
+        assertEquals(
+                "La contrasenya ha de contenir almenys un caràcter especial",
+                r.getMessage()
+        );
+    }
 }
