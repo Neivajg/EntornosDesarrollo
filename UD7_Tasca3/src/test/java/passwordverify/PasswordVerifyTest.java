@@ -194,4 +194,11 @@ class PasswordVerifyTest {
         assertTrue(r.isValid());
         assertEquals("", r.getMessage());
     }
+
+    @Test
+    void passwordValida2() {
+        PasswordResult r = PasswordVerify.validate("#P4blit0cl4v0uncl4vit0#");
+        assertTrue(r.isValid());
+        assertEquals("", r.getMessage());
+    }
 }
