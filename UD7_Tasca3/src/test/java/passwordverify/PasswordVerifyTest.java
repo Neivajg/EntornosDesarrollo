@@ -187,4 +187,11 @@ class PasswordVerifyTest {
                 r.getMessage()
         );
     }
+
+    @Test
+    void passwordValida1() {
+        PasswordResult r = PasswordVerify.validate("holacaracola12A!");
+        assertTrue(r.isValid());
+        assertEquals("", r.getMessage());
+    }
 }
